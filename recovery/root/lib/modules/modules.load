@@ -6,7 +6,6 @@ exynos_tty.ko
 clk_exynos.ko
 i2c-exynos5.ko
 sec_debug_mode.ko
-sec_detect.ko
 ems.ko
 zsmalloc.ko
 lzo.ko
@@ -157,6 +156,7 @@ is-cis-gw1.ko
 is-cis-imx258.ko
 is-cis-4ha.ko
 is-cis-gc02m1.ko
+is-cis-gc02m2.ko
 is-cis-gc5035.ko
 is-cis-imx616.ko
 is-cis-imx682.ko
@@ -165,7 +165,6 @@ is-cis-gd2.ko
 is-cis-hi1339.ko
 is-cis-jn1.ko
 is-cis-imx355.ko
-is-cis-4ha.ko
 is-cis-imx582.ko
 is-cis-3l6.ko
 is-actuator-ak737x.ko
@@ -274,6 +273,7 @@ sec_debug_hardlockup_info.ko
 sec_debug_sched_report.ko
 vbus_notifier.ko
 sec_common_fn.ko
+sec_cmd.ko
 dropdump.ko
 mcd-panel-nt36672c_m33x_00.ko
 mcd-panel-nt36672c_m33x_01.ko

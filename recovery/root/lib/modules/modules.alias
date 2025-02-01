@@ -114,6 +114,8 @@ alias of:N*T*Csamsung,exynos-itmon exynos_itmon
 alias of:N*T*Csamsung,exynos-itmonC* exynos_itmon
 alias of:N*T*Csamsung,exynos-tzasc exynos_tzasc
 alias of:N*T*Csamsung,exynos-tzascC* exynos_tzasc
+alias of:N*T*Csamsung,exynos-is-cis-gc02m2 is_cis_gc02m2
+alias of:N*T*Csamsung,exynos-is-cis-gc02m2C* is_cis_gc02m2
 alias of:N*T*Csiliconmitus,sm5714mfd mfd_sm5714
 alias of:N*T*Csiliconmitus,sm5714mfdC* mfd_sm5714
 alias i2c:sm5714 mfd_sm5714
