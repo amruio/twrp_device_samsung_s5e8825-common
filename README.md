@@ -1,9 +1,9 @@
-## Recovery Device Tree for the Samsung Galaxy A53 5G (Exynos)
+## Common device tree for Exynos 1280 devices
 
-## How-to compile it:
-
-```sh
-. build/envsetup.sh
-lunch twrp_a53x-eng
-make recoveryimage
+```
+#
+# Copyright (C) 2022 Team Win Recovery Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
 ```

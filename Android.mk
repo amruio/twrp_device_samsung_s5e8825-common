@@ -14,9 +14,9 @@
 # limitations under the License.
 #
 
-ifneq ($(filter a53x, $(TARGET_DEVICE)),)
-
 LOCAL_PATH := $(call my-dir)
+
+ifeq ($(TARGET_S5E8825_COMMON),true)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
