@@ -170,7 +170,7 @@ ifdef BUILD_TIMESTAMP
   _FINAL_BUILD_TIME := $(BUILD_TIMESTAMP)
 else
   # Or calculate it if it isn't present
-  _FINAL_BUILD_TIME := $(shell date '+%d%m%y-%H%M')
+  _FINAL_BUILD_TIME := $(shell date '+%y%m%d-%H%M')
 endif
 
 TW_DEVICE_VERSION := $(DEVICE_CODENAME)-$(_FINAL_BUILD_TIME)
