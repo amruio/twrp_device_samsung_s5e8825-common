@@ -10,6 +10,7 @@ softdep s2mu106_pmeter post: muic_s2mu106
 softdep mcd_panel_decon_samsung_drv pre: mcd-panel-decon
 softdep muic_s2mf301 pre: s2mf301_pmeter top_s2mf301
 softdep muic_s2mf301 post: s2mf301-usbpd
+softdep stm_ts pre: acpm-mfd-bus
 softdep softdog pre: s3c2410_wdt
 softdep pdic_s2mf301 pre: muic_s2mf301
 softdep is_flash_s2mu106 pre: fimc-is

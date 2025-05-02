@@ -169,6 +169,7 @@ is-cis-imx582.ko
 is-cis-3l6.ko
 is-actuator-ak737x.ko
 is-actuator-dw9808.ko
+is-actuator-dw9818.ko
 is-flash-s2mf301.ko
 is-flash-sm5714.ko
 is-flash-s2mu106.ko
@@ -231,7 +232,7 @@ hid-twinhan.ko
 hid-zpff.ko
 hid-zydacron.ko
 hid-waltop.ko
-switch_class.ko
+sec_switch_class.ko
 nanohub.ko
 exynos_devfreq.ko
 s2mpu13_adc.ko
@@ -273,7 +274,9 @@ sec_debug_hardlockup_info.ko
 sec_debug_sched_report.ko
 vbus_notifier.ko
 sec_common_fn.ko
-sec_cmd.ko
+legacy_sec_common_fn.ko
+legacy_sec_cmd.ko
+legacy_sec_tclm_v2.ko
 dropdump.ko
 mcd-panel-nt36672c_m33x_00.ko
 mcd-panel-nt36672c_m33x_01.ko
@@ -283,6 +286,8 @@ mcd-panel-s6e3fc3_a25x.ko
 mcd-panel-s6e3fc3_a33x.ko
 mcd-panel-s6e8fc3_a33x.ko
 mcd-panel-s6e3fc3_a53x.ko
+mcd-panel-s6e8fc3_a26x.ko
+mcd-panel-db7f2010b_a26x.ko
 usdm-panel-oled-common.ko
 usdm-panel-tft-common.ko
 muic_platform.ko
@@ -296,6 +301,7 @@ fp_ec6xx.ko
 fp_el7xx.ko
 fp_gw9558x.ko
 s2m_pdic_notifier_module.ko
+legacy_s2m_pdic_notifier_module.ko
 pdic_notifier_module.ko
 mcd-panel.ko
 mcd-panel-decon.ko
@@ -305,6 +311,7 @@ mfd_s2mf301.ko
 mfd_sm5714.ko
 mfd_s2mu106.ko
 sm5451-charger.ko
+nu2111a_charger.ko
 hl7132_charger.ko
 sm5714-charger.ko
 sx938x.ko
@@ -322,6 +329,7 @@ sm5714_fuelgauge.ko
 s2mu106_fuelgauge.ko
 shub.ko
 sensor_core.ko
+stm_ts.ko
 mstdrv.ko
 snvm.ko
 dc_vibrator.ko
@@ -341,19 +349,21 @@ sec-battery.ko
 pdic_sm5714.ko
 exynos-bts.ko
 exynos-btsops8825.ko
-spu_verify.ko
 exynos-usb-audio-offloading.ko
 abox_adaptation.ko
 snd-soc-rl6231.ko
 snd-soc-rt5665.ko
 snd-soc-rt5691.ko
+snd-soc-fs1816.ko
 snd-soc-tfa98xx.ko
+snd-soc-smartpa-aw882xx.ko
 snd-soc-tfa_sysfs.ko
 snd-soc-tas2562.ko
 snd-soc-s3c-dma.ko
 snd-soc-samsung-abox-gic.ko
 snd-soc-samsung-abox.ko
 snd-soc-samsung-abox-sync.ko
+snd-soc-samsung-abox-sync-aw.ko
 snd-soc-samsung-vts-mailbox.ko
 snd-soc-samsung-vts.ko
 snd-soc-samsung-slif.ko
@@ -362,7 +372,6 @@ exynos8825_rt5665.ko
 exynos8825_rt5691.ko
 exynos8825_audio.ko
 sec_audio_sysfs.ko
-sec_audio_debug.ko
 tcp_westwood.ko
 tcp_htcp.ko
 cfg80211.ko
