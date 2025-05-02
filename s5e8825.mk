@@ -31,9 +31,4 @@ $(call inherit-product, device/samsung/s5e8825-common/device.mk)
 PRODUCT_PACKAGES += \
     charger_res_images
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
-TARGET_BOOT_ANIMATION_RES := 1080
-
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/s5e8825-common/recovery/root,recovery/root)
