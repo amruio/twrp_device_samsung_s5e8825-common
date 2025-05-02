@@ -165,5 +165,12 @@ ifndef DEVICE_CODENAME
   $(error DEVICE_CODENAME must be set in the device-specific BoardConfig.mk before including BoardConfigCommon.mk)
 endif
 
-_BUILD_DATE_TIME := $(shell date '+%d%m%y-%H%M')
-TW_DEVICE_VERSION := $(DEVICE_CODENAME)-$(_BUILD_DATE_TIME)	
+ifdef BUILD_TIMESTAMP
+  # Use the timestamp passed from the environment
+  _FINAL_BUILD_TIME := $(BUILD_TIMESTAMP)
+else
+  # Or calculate it if it isn't present
+  _FINAL_BUILD_TIME := $(shell date '+%d%m%y-%H%M')
+endif
+
+TW_DEVICE_VERSION := $(DEVICE_CODENAME)-$(_FINAL_BUILD_TIME)
