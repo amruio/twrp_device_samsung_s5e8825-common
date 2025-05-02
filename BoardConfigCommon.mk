@@ -154,3 +154,11 @@ TW_NO_BIND_SYSTEM := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TW_BACKUP_EXCLUSIONS := /data/fonts
 TW_INCLUDE_FASTBOOTD := true
+
+# Device name
+ifndef DEVICE_CODENAME
+  $(error DEVICE_CODENAME must be set in the device-specific BoardConfig.mk before including BoardConfigCommon.mk)
+endif
+
+_BUILD_DATE_TIME := $(shell date '+%d%m%y-%H%M')
+TW_DEVICE_VERSION := $(DEVICE_CODENAME)-$(_BUILD_DATE_TIME)	
